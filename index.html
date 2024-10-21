@@ -28,18 +28,22 @@
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
 	<audio id="background-music" preload="auto">
 		<source src="music/Experience.mp3" type="audio/mp3">
-		Your browser does not support the audio element.
+		
 	</audio>
 	
-	
-	
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
-	  <div class="container">
-		<a class="navbar-brand" href="index.html">
-		  <span>A</span>TEF ABBASSI
-		  <!-- Play button -->
-		  <i id="music-icon" class="fas fa-play" style="margin-left: 10px; cursor: pointer;" onclick="playMusic()"></i>
-		</a>
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				<span>A</span>TEF ABBASSI
+				<!-- Play button -->
+				<i id="music-icon" class="fas fa-play" style="margin-left: 10px; cursor: pointer;" onclick="playMusic()"></i>
+				<!-- Mute button -->
+				<i id="mute-icon" class="fas fa-volume-up" style="margin-left: 10px; cursor: pointer;" onclick="muteMusic()"></i>
+			</a>
+		
+	
+	
+	
 	
 			<button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse"
 				data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1435,17 +1439,35 @@
 	<script src="js/aos.js"></script>
 	<script src="js/jquery.animateNumber.min.js"></script>
 	<script src="js/scrollax.min.js"></script>
-    <script>
+	<script> 
+		var isMuted = false; // Variable to track mute state
+	
 		function playMusic() {
-    var music = document.getElementById('background-music');
-    music.play().then(() => {
-      console.log('Music is playing');
-    }).catch(error => {
-      console.error('Playback failed:', error);
-      alert('Audio playback failed. Check the console for more information.');
-    });
-  }
-	  </script>
+			var music = document.getElementById('background-music');
+			music.play().then(() => {
+				console.log('Music is playing');
+			}).catch(error => {
+				console.error('Playback failed:', error);
+				alert('Audio playback failed. Check the console for more information.');
+			});
+		}
+	
+		function muteMusic() {
+			var music = document.getElementById('background-music');
+			isMuted = !isMuted; // Toggle mute state
+			music.muted = isMuted; // Set audio muted property
+	
+			// Change icon based on mute state
+			var muteIcon = document.getElementById('mute-icon');
+			if (isMuted) {
+				muteIcon.classList.remove('fa-volume-up');
+				muteIcon.classList.add('fa-volume-mute'); // Change to mute icon
+			} else {
+				muteIcon.classList.remove('fa-volume-mute');
+				muteIcon.classList.add('fa-volume-up'); // Change to unmute icon
+			}
+		}
+	</script>
 	<script src="js/main.js"></script>
 
 </body>

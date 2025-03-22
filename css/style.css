@@ -9778,6 +9778,7 @@ textarea.form-control {
   padding: 2rem;
   margin-bottom: 2rem;
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  display: none; /* Caché par défaut */
 }
 .projet-card:hover {
   transform: translateY(-0.5rem);
@@ -9817,7 +9818,8 @@ textarea.form-control {
 .projet-filter-button {
   background-color: #e5e7eb;
   color: #374151;
-  
+  font-weight: 600;
+  font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
   outline: none;
@@ -9842,7 +9844,8 @@ textarea.form-control {
 .projet-page-button {
   background-color: #e5e7eb;
   color: #374151;
-  
+  font-weight: 600;
+  font-size: 0.875rem;
   padding: 0.5rem 1rem;
   border-radius: 0.375rem;
   outline: none;
@@ -9857,4 +9860,9 @@ textarea.form-control {
   background-color: #3b82f6;
   color: #fff;
 }
-
+.projet-card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}

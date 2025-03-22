@@ -9771,5 +9771,90 @@ textarea.form-control {
     margin-bottom: 10px; /* Add space between buttons on small screens */
   }
 }
-
+.projet-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.projet-card:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.projet-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #1f2937;
+}
+.projet-card-description {
+  color: #4b5563;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.projet-card-details {
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+.projet-detail-title {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+.projet-detail-value {
+  color: #6b7280;
+}
+.projet-filter-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+}
+.projet-filter-button {
+  background-color: #e5e7eb;
+  color: #374151;
+  
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+.projet-filter-button:hover {
+  background-color: #d1d5db;
+}
+.projet-filter-button.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
+.projet-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.projet-page-button {
+  background-color: #e5e7eb;
+  color: #374151;
+  
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  outline: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  cursor: pointer;
+  border: none;
+}
+.projet-page-button:hover {
+  background-color: #d1d5db;
+}
+.projet-page-button.active {
+  background-color: #3b82f6;
+  color: #fff;
+}
 

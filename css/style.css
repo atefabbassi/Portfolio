@@ -9864,7 +9864,7 @@ textarea.form-control {
 .projet-card-image {
   width: 100%; /* Adapte la largeur au conteneur */
   height: auto; /* Ajuste automatiquement la hauteur en fonction de la largeur */
-  max-height: 400px; /* Ajuste selon tes besoins pour éviter une hauteur excessive */
+  max-height: 550px; /* Ajuste selon tes besoins pour éviter une hauteur excessive */
   object-fit: cover; /* Assure que l'image couvre tout le conteneur */
   border-radius: 0.4rem; /* Applique un arrondi sur les 4 coins */
   margin-bottom: 1rem;

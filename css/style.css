@@ -9791,6 +9791,7 @@ textarea.form-control {
             font-weight: 600;
             margin-bottom: 1rem;
             color: #1f2937;
+            
         }
         .projet-card-description {
             color: #4b5563;
@@ -9866,7 +9867,7 @@ textarea.form-control {
         .projet-card-image {
             width: 100%;
             height: auto;
-            max-height: 400px;
+            max-height: 600px;
             object-fit: cover;
             border-radius: 0.4rem;
             margin-bottom: 1rem;
@@ -9944,3 +9945,4 @@ textarea.form-control {
             background-color: #6b7280;
             color: #fff;
         }
+        
